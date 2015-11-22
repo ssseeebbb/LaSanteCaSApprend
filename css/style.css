@@ -478,10 +478,10 @@ height: 100%;
 			border-radius: 100%;
 			color: #ffffff;
 			display: inline-block;
-			height: 3.25em;
-			line-height: 3.25em;
+			height: 3em;
+			line-height: 3em;
 			text-align: center;
-			width: 3.25em;
+			width: 3em;
 		}
 
 			.icon.rounded.big {
