@@ -640,6 +640,12 @@ height: 100%;
 		padding-left: 1em;
 	}
 
+	ul .nospace{
+		list-style: disc;
+		margin: 0 0 0 0;
+		padding-left: 1em;
+	}
+
 		ul li {
 			padding-left: 0.5em;
 		}
