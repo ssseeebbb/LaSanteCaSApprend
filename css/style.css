@@ -1139,8 +1139,9 @@ height: 100%;
 /* Banner */
 
 	#banner {
-		background-image: /*url(../images/dark_tint.png),*/ url(../images/photocuisine2.jpg);
+		background-image: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)), url(../images/photocuisine2.jpg);
 		background-position: center center;
+		height: 95vh;
 		background-size: cover;
 		color: #ffffff;
 		padding: 23em 0em 14em;
@@ -1155,19 +1156,21 @@ height: 100%;
 			color: #ffffff;
 			font-size: 4em;
 			line-height: 1.25em;
-			margin: 0 0 6em 0;
+			margin: 0 auto;
 			padding: 10;
 		}
 
-		#banner p {
+		#banner h3 {
 			font-size: 1.8em;
+			margin-top: 1em;
 			margin-bottom: 1em;
 		}
 
 /* Wrapper */
 
 	.wrapper {
-		padding: 6em 0em 4em;
+		padding: 4em 0em 2em;
+		font-size: 1.6em;
 		/* Style 1 Wrapper */
 		/* Style 2 Wrapper */
 		/* Style 3 Wrapper */
