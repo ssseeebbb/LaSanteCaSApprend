@@ -1,0 +1,79 @@
+#quote-carousel {
+    padding: 0 1rem 0rem 1rem;
+    margin-top: 1rem;
+
+    @include respond(big-desktop){
+        padding: 0 1rem 0rem 1rem;
+        width: 100%;
+    }
+
+    @include respond(tab-land){
+        padding: 0 1rem 5rem 1rem;
+        width: 100%;
+    } 
+
+    @include respond(tab-port){
+        padding: 0 1rem 28rem 1rem;
+        width: 100%;
+    } 
+    @include respond(phone){
+        padding: 0 1rem 33rem 1rem;
+        width: 100%;
+    } 
+}
+#quote-carousel .carousel-control {
+    background: none;
+    color: #CACACA;
+    font-size: 2.3em;
+    text-shadow: none;
+    margin-top: 30px;
+
+    &:hover{
+        color: $color-grey-dark-2;
+    }
+}
+#quote-carousel .carousel-control.left {
+    left: -60px;
+}
+#quote-carousel .carousel-control.right {
+    right: -60px;
+}
+#quote-carousel .carousel-indicators {
+    right: 50%;
+    top: auto;
+    bottom: 0px;
+    margin-right: -19px;
+}
+#quote-carousel .carousel-indicators li {
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    cursor: pointer;
+    border: 4px solid #CCC;
+    border-radius: 50px;
+    opacity: 0.4;
+    overflow: hidden;
+    transition: all 0.4s;
+}
+#quote-carousel .carousel-indicators .active {
+    background: #333333;
+    width: 128px;
+    height: 128px;
+    border-radius: 100px;
+    border-color: $color-blue;
+    opacity: 1;
+    overflow: hidden;
+}
+.carousel-inner {
+    min-height: 30rem;
+}
+.item blockquote {
+    border-left: none;
+    margin: 0;
+}
+.item blockquote p:before {
+    content: "\f10d";
+    font-family: 'Fontawesome';
+    float: left;
+    margin-right: 0px;
+}

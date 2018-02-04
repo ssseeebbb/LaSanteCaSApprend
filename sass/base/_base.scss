@@ -1,0 +1,59 @@
+/*Selector, to reset the navigator*/
+*,
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit;
+}
+
+html{
+	font-size : 62.5%; 
+	/* @include respond(phone){
+		font-size: 50%;   //1rem = 7px
+	} */
+	
+
+	/*On met toujours la plus grand media query en premier*/
+
+	@include respond(tab-land){
+		font-size: 56.25%; //1rem = 9px
+	}
+	
+	@include respond(tab-port){
+		font-size: 50%;  //1rem = 8px
+	}
+	
+/* 	@include respond(phone){
+		font-size: 30%;  //1rem = 8px
+	} */
+
+	@include respond(big-desktop){
+		font-size: 75%; //1rem = 12px
+	}
+
+}
+
+body {
+	box-sizing: border-box;  /*Permet de dimensionner les box en incluant le padding */
+	padding:2rem;
+
+	
+	@include respond(tab-port){
+		font-size: 50%;  //1rem = 8px
+		padding:0;
+	}
+
+	@include respond(big-desktop){
+		font-size: 75%; //1rem = 12px
+	}
+}
+
+
+
+
+
+::selection{
+	background-color: $color-blue-light;
+	color: $color-white;
+}

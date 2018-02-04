@@ -1,0 +1,12 @@
+.list-calendrier{
+	width:25rem;
+	list-style:none;
+	color:$color-blue;
+	font-weight: 700;
+	padding: .1rem;
+
+	& li{
+		margin:0rem;
+		padding:0rem;
+	}
+}

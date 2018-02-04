@@ -1,170 +1,435 @@
 <!DOCTYPE html>
-<!--
-	Transit by TEMPLATED
-	templated.co @templatedco
-	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
--->
-
 <html lang="en">
 	<head>
 		<meta charset="UTF-8">
-		<title>La santé, cela s'apprend!</title>
-		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-		<meta name="description" content="" />
-		<meta name="keywords" content="" />
-		<meta name="google-site-verification" content=""/>
-		<!--[if lte IE 8]><script src="js/html5shiv.js"></script><![endif]-->
-		<script src="js/jquery.min.js"></script>
-		<script src="js/skel.min.js"></script>
-		<script src="js/skel-layers.min.js"></script>
-		<script src="js/init.js"></script>
-		<noscript>
-			<link rel="stylesheet" href="css/skel.css" />
-			<link rel="stylesheet" href="css/style.css" />
-			<link rel="stylesheet" href="css/style-xlarge.css" />
-		</noscript>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie-edge">
+
+		<link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet" >
+
+		<link href="http://netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>		
+   		<script src="http://netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+		<link rel="stylesheet" type="text/css" href="css/icon-font.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+
+		<link rel="shortcut icon" type="image/png" href="img/favicon.png">
+
+		<title>La Santé Cela S'Apprend</title>
 	</head>
-	
-	<body class="landing">
+	<body>
+		<div class="navigation">
+			<input type="checkbox" class="navigation__checkbox" id="navi-toggle">
 
-		<!-- Header -->
-			<header id="header">
-				<h1>La santé, cela s'apprend !</h1>
-				<nav id="nav">
-					<ul>
-						<li><a href="index.html">Accueil</a></li>
-						<li><a href="Presentation.html">Présentation</a></li>
-						<li><a href="Cours.html">Cours</a></li>
-						<li><a href="Calendrier.html">Calendrier</a></li>
-						<li><a href="Tarifs.html">Tarif</a></li>
-						<li><a href="Contact.html">Contact</a></li>
-					</ul>
-				</nav>
-			</header>
+			<label for="navi-toggle" class="navigation__button">
+				<span class="navigation__icon">&nbsp;</span>
+			</label>
 
-		<!-- Banner -->
-			<section id="banner">
-				<h2>La santé, cela s'apprend !</h2>
-				<p><font size="6" color=#ffffff>Cours d'hygiène de vie et cours de cuisine</p>
-				<ul class="actions">
+			<div class="navigation__background">&nbsp;</div>
+
+			<nav class="navigation__nav">
+				<ul class="navigation__list">
+					<li class="navigation__item">
+						<a href="index.html" class="navigation__link">
+							<img src="img/illustrations/home.svg" alt="illustration maison" class="navigation__illustration">
+							Accueil
+						</a>
+					</li>
+					<li class="navigation__item">
+						<a href="presentation.html" class="navigation__link">
+							<img src="img/illustrations/presentation.svg" alt="illustration presentation" class="navigation__illustration">
+							Présentation
+						</a>
+					</li>
+					<li class="navigation__item">
+						<a href="calendrier.html" class="navigation__link">
+							<img src="img/illustrations/calendrier.svg" alt="illustration calendrier" class="navigation__illustration">
+							Calendrier des cours
+						</a>
+					</li>
+					<li class="navigation__item">
+						<a href="cours.html" class="navigation__link">
+							<img src="img/illustrations/cours.svg" alt="illustration repas" class="navigation__illustration">
+							Contenu des cours théoriques
+						</a>
+					</li>
+					<li class="navigation__item">
+						<a href="prix.html" class="navigation__link">
+							<img src="img/illustrations/euro.svg" alt="illustration euro" class="navigation__illustration">
+							Le Prix
+						</a>
+					</li>
+					<li class="navigation__item">
+						<a href="localisation.html" class="navigation__link">
+							<img src="img/illustrations/localisation.svg" alt="illustration localisation" class="navigation__illustration">
+							Localisation
+						</a>
+					</li>
 				</ul>
-			</section>
+			</nav>
+		</div>
 
-			<section id="three" class="wrapper style3 special">
-				<div class="container">
-						<h3>Vous désirez comprendre quels sont les mécanismes qui sous-tendent le fonctionnement d’un corps humain en bonne santé ?</h3>
-						<h3>Vous avez du mal à vous y mettre ou à rester motivé(e) pour améliorer votre hygiène de vie ?</h3>
-						<h3>Vous voulez apprendre à cuisiner sainement ?</h3>
+		<header class="header">
+<!-- 		<div class="header__logo-box">
+				<img src="img/logo/logo.png" alt="logo la sante cela s'apprend" class="header__logo">
+			</div> -->
+			<div class="header__text-box">
+				<h1 class="heading-primary">
+					<span class="heading-primary--main">La santé cela s'apprend</span>
+					<span class="heading-primary--sub">Cours d'hygiène de vie et cours de cuisine</span>
+				</h1>
+			</div>
+			<div class="header__arrow-down">
+				<a href="#" id="scrollDown"><img src="img/illustrations/arrowdown.png" alt="arrow down" class='header__arrow-down--image'></a>
+			</div>
+		</header>
 
+		<section class="section-accroche" id="section-accroche">
+			<div class="row row--medium">
+				<div class="col-1-of-3">
+					<img src="img/logo/logo.png" alt="logo" class="img-responsive images--80 u-padding-xsmall-vertical">
 				</div>
+				<div class="col-2-of-3 ">
+					<h2 class="heading-sentence text-white">
+						Vous désirez comprendre quels sont les mécanismes qui sous-tendent le fonctionnement d'un corps humain en bonne santé ?
+					</h2>
+					<h2 class="heading-sentence text-white">
+						Vous avez du mal à vous y mettre ou à rester motivé(e) pour améliorer votre hygiène de vie ?
+					</h2>
+					<h2 class="heading-sentence text-white">
+						Vous voulez apprendre à cuisiner sainement ?
+					</h2>
+				</div>
+			</div>
+		</section>
 
-
-			</section>
-
-		<!-- One -->
-			<section id="one" class="wrapper style2 special">
-				<div class="container">
-					<header class="major">
-						<h2></h2>
-						<p><font size="6">Aux cours de "La santé, cela s'apprend !",  </br>
-						apprenez à comprendre et à satisfaire les besoins essentiels de votre corps </br>
-						et à mettre en pratique une bonne hygiène de vie pour viser un état de pleine santé.</p>
-					</header>
-					<div class="row 100%">
-						<div class="4u 12u$(medium)">
-							<section class="box">
-								<i class="icon big rounded color10 fa-pencil"></i>
-								<h3>Présentation</h3>
-								<p>Enseignement théorique + cours de cuisine</p>
-								<a href="Presentation.html" class="button special1">Plus d'infos</a>
-							</section>
+		<section class="section-infos">
+			<div class="u-center-text u-margin-bottom-medium">
+				<h2 class="heading-secondary">
+					En bref
+				</h2>
+				<h4 class="heading-center--mlarge text-small-side-padding text-grey">
+					Apprenez à comprendre et à satisfaire les besoins essentiels de votre corps et à mettre en pratique une bonne hygiène de vie pour viser un état de pleine santé.
+				</h4>
+			</div>
+			<div class="u-center-text u-margin-bottom-medium">
+				<div class="row row--medium">
+					<div class="col-1-of-4">
+						<div class="carte--info">
+							<img src="img/illustrations/person.svg" alt="logo" class="images--medium filter--invert">
+							<h4 class="heading-center--large text-white u-margin-bottom-msmall">Qui</h4>
+							<a href="presentation.html" class="btn btn--blue btn--animated" id="header-button" >Présentation</a>
 						</div>
-						<div class="4u 12u$(medium)">
-							<section class="box">
-								<i class="icon big rounded color11 fa-clock-o"></i>
-								<h3>Cours</h3>
-								<p>Contenu des cours</p></br></br>
-								<a href="Cours.html" class="button special2">Plus d'infos</a>
-							</section>
-						</div>
-						<div class="4u 12u$(medium)">
-							<section class="box">
-								<i class="icon big rounded color12 fa-calendar"></i>
-								<h3>Calendrier</h3>
-								<p>Cours de 9h à 15h</p></br></br>
-								<a href="Calendrier.html" class="button special3">Plus d'infos</a>
-							</section>
-						</div>
-<!-- 						<div class="4u 12u$(medium)">
-							<section class="box">
-								<i class="icon big rounded color13 fa-map-marker"></i>
-								<h3>Contact</h3>
-								<p>Isabelle Brasseur</p></br></br>
-								<a href="Contact.html" class="button special4">Infos</a>
-							</section>
-						</div> -->
 					</div>
-					</br>
-					</br>
-
-
-
-
-
-				<!-- </div>
-			</section>
-			<section id="two" class="wrapper style2 special">
-				<div class="container"> -->
-					<div class="box alt">
-						<div class="row 50% uniform">
-							<div class="3u"><span class="image fit"><img src="images/photo3.jpg" alt="" /></span></div>
-							<div class="3u"><span class="image fit"><img src="images/photo4.jpg" alt="" /></span></div>
-							<div class="3u"><span class="image fit"><img src="images/photo5.jpg" alt="" /></span></div>
-							<div class="3u$"><span class="image fit"><img src="images/photo6.jpg" alt="" /></span></div>
+					<div class="col-1-of-4">
+						<div class="carte--info">
+							<img src="img/illustrations/localisation.svg" alt="logo" class="images--medium filter--invert">
+							<h4 class="heading-center--large text-white u-margin-bottom-msmall">Où</h4>
+							<a href="localisation.html" class="btn btn--blue btn--animated" id="header-button" >Contact</a>
 						</div>
-					</div>		
-				</div>
-			</section>
-
-
-		<!-- Footer -->
-			<footer id="footer">
-				<div class="container">
-					<section class="links">
-						<div class="row">
-							<section >
-								<h3>Contact</h3>
-								<ul class="unstyled">
-									<li>Téléphone : +32 477 25 52 15</a></li>
-									<li><a href="mailto:brasseur.isabelle@gmail.com">E-mail : brasseur.isabelle@gmail.com</a>
-									<li>Adresse : 16 avenue de l'Orée - 1640 Rhode-Saint-Genèse</li>
-								</ul>
-							</section>
+					</div>
+					<div class="col-1-of-4">
+						<div class="carte--info">
+							<img src="img/illustrations/calendrier.svg" alt="logo" class="images--medium filter--invert">
+							<h4 class="heading-center--large text-white u-margin-bottom-msmall">Quand</h4>
+							<a href="calendrier.html" class="btn btn--blue btn--animated" id="header-button" >Calendrier</a>
 						</div>
-					</section>
-					<div class="row">
-						<div class="8u 12u$(medium)">
-							<ul class="copyright">
-								<li>&copy; All rights reserved.</li>
-								<li>Design: <a href="http://templated.co">TEMPLATED</a></li>
-							</ul>
+					</div>
+					<div class="col-1-of-4">
+						<div class="carte--info">
+							<img src="img/illustrations/euro.svg" alt="logo" class="images--medium filter--invert">
+							<h4 class="heading-center--large text-white u-margin-bottom-msmall">Combien</h4>
+							<a href="prix.html" class="btn btn--blue btn--animated" id="header-button" >Prix</a>
 						</div>
-						<!-- <div class="4u$ 12u$(medium)">
-							<ul class="icons">
-								<li>
-									<a class="icon rounded fa-facebook" href="https://www.facebook.com/zappyschool?_rdr=p" ><span class="label">Facebook</span></a>
-								</li>
-								<li>
-									<a class="icon rounded fa-twitter" href="https://twitter.com/zappyschool"><span class="label">Twitter</span></a>
-								</li>
-								<li>
-									<a class="icon rounded fa-linkedin"><span class="label">LinkedIn</span></a>
-								</li>
-							</ul>
-						</div> -->
 					</div>
 				</div>
-			</footer>
+			</div>
+		</section>
+		
+		<section class="section-cours">
+			<div class="u-center-text u-margin-bottom-msmall">
+				<h2 class="heading-secondary text-white u-margin-bottom-msmall">
+					Les cours
+				</h2>
+			</div>
+			<div class="u-center-text u-margin-bottom-medium">
+				<div class="row row--medium">
+					<div class="col-1-of-3">
+						<div class="carte--cours">
+							<div class="carte__photo u-margin-bottom-msmall" style="background-image: url(img/cours/cours1.jpg)"; >
+							&nbsp;
+							</div>
+							<h4 class="heading-center--large text-grey-dark u-margin-bottom-msmall">
+								Niveau 1
+							</h4>
+							<h5 class="text-small-side-padding heading-center--medium text-grey u-margin-bottom-medium">
+								La maladie n'est pas une fatalité
+							</h5>
+							<div class="place--absolute">
+								<a href="cours.html#cours1" class="btn btn--white btn--animated" >Savoir plus</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-1-of-3">
+						<div class="carte--cours">
+							<div class="carte__photo u-margin-bottom-msmall" style="background-image: url(img/cours/cours2.jpg)"; >
+							&nbsp;
+							</div>
+							<h4 class="heading-center--large text-grey-dark u-margin-bottom-msmall">
+								Niveau 2
+							</h4>
+							<h5 class="text-small-side-padding heading-center--medium text-grey u-margin-bottom-medium">
+								Les maladies, un problème d'auto-intoxication
+							</h5>
+							<div class="place--absolute">
+								<a href="cours.html#cours2" class="btn btn--white btn--animated" >Savoir plus</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-1-of-3">
+						<div class="carte--cours">
+							<div class="carte__photo u-margin-bottom-msmall" style="background-image: url(img/cours/cours3.jpg)"; >
+							&nbsp;
+							</div>
+							<h4 class="heading-center--large text-grey-dark u-margin-bottom-msmall">
+								Niveau 3
+							</h4>
+							<h5 class="text-small-side-padding heading-center--medium text-grey u-margin-bottom-medium">
+								Comprendre et soigner les petits maux du quotidien grâce aux remèdes naturels
+							</h5>
+							<div class="place--absolute">
+								<a href="cours.html#cours3" class="btn btn--white btn--animated" >Savoir plus</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row row--medium">
+					<div class="col-1-of-3">
+						<div class="carte--cours">
+							<div class="carte__photo u-margin-bottom-msmall" style="background-image: url(img/cours/cours4.jpg)"; >
+							&nbsp;
+							</div>
+							<h4 class="heading-center--large text-grey-dark u-margin-bottom-msmall">
+								Niveau 4
+							</h4>
+							<h5 class="text-small-side-padding heading-center--medium text-grey u-margin-bottom-medium">
+								Comment booster son système immunitaire, gardien de notre santé ? 
+							</h5>
+							<div class="place--absolute">
+								<a href="cours.html#cours4" class="btn btn--white btn--animated" >Savoir plus</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-1-of-3">
+						<div class="carte--cours">
+							<div class="carte__photo u-margin-bottom-msmall" style="background-image: url(img/cours/cours5.jpg)"; >
+							&nbsp;
+							</div>
+							<h4 class="text-small-side-padding heading-center--large text-grey-dark u-margin-bottom-small">
+								Niveau 5
+							</h4>
+							<h5 class="text-small-side-padding heading-center--medium text-grey u-margin-bottom-medium">
+								Prévenir vaut toujours mieux que guérir 
+							</h5>
+							<div class="place--absolute">
+								<a href="cours.html#cours5" class="btn btn--white btn--animated" >Savoir plus</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-1-of-3">
+						<div class="carte--cours">
+							<div class="carte__photo u-margin-bottom-msmall" style="background-image: url(img/cours/cours6.jpg)"; >
+							&nbsp;
+							</div>
+							<h4 class="text-small-side-padding heading-center--large text-grey-dark u-margin-bottom-small">
+								Niveau 6
+							</h4>
+							<h5 class="text-small-side-padding heading-center--medium text-grey u-margin-bottom-medium">
+								Le sucre : un ennemi redoutable pour notre santé 
+							</h5>
+							<div class="place--absolute">
+								<a href="cours.html#cours6" class="btn btn--white btn--animated" >Savoir plus</a>
+							</div>
+						</div>
+					</div>
+				</div>
+		</section>
 
+		<section class="section-temoignage">
+			<div class="u-center-text u-margin-bottom-xsmall">
+				<h2 class="heading-secondary">
+					Témoignages
+				</h2>
+			</div>
+			<div class="container">
+				<div class="row">
+                    <div class="col-md-12" data-wow-delay="0.2s">
+                        <div class="carousel slide" data-ride="carousel" id="quote-carousel">
+                            <!-- Bottom Carousel Indicators -->
+                            <ol class="carousel-indicators">
+                                <li data-target="#quote-carousel" data-slide-to="0" class="active"><img class="img-responsive " src="img/temoignage/lucie.jpg" alt="">
+                                </li>
+                                <li data-target="#quote-carousel" data-slide-to="1"><img class="img-responsive" src="img/temoignage/nathaliecamus.png" alt="">
+                                </li>
+                                <li data-target="#quote-carousel" data-slide-to="2"><img class="img-responsive" src="img/temoignage/francoisstoop.jpg" alt="">
+                                </li>
+                                <li data-target="#quote-carousel" data-slide-to="3"><img class="img-responsive" src="img/temoignage/pascalefallon.jpg" alt="">
+                                </li>
+                                <li data-target="#quote-carousel" data-slide-to="4"><img class="img-responsive" src="img/temoignage/sabinehoutman.jpg" alt="">
+                                </li>
+                                <li data-target="#quote-carousel" data-slide-to="5"><img class="img-responsive" src="img/temoignage/sebastien.jpg" alt="">
+                                </li>
+                                <li data-target="#quote-carousel" data-slide-to="6"><img class="img-responsive" src="img/temoignage/sebfuki.jpg" alt="">
+                                </li>
+                            </ol>
+
+                            <!-- Carousel Slides / Quotes -->
+                            <div class="carousel-inner text-center">
+
+                                <!-- Quote 1 -->
+                                <div class="item active">
+                                    <blockquote>
+                                        <div class="row">
+                                            <div class="col-xs-8 col-xs-offset-2">
+                                                <p>Merci Isabelle pour tes cours toujours passionnants : la partie théorique est très complète, claire et vient parfaitement compléter mes cours de nutrition du CERDEN. La partie cours de cuisine est un excellent moyen de mettre en pratique la théorie et les recettes sont toujours délicieuses. Et quel plaisir lorsque vient le moment de se mettre à table !</p>
+                                                <small>Lucie Rosset </small>
+                                            </div>
+                                        </div>
+                                    </blockquote>
+                                </div>
+                                <!-- Quote 2 -->
+                                <div class="item">
+                                    <blockquote>
+                                        <div class="row">
+                                            <div class="col-xs-8 col-xs-offset-2">
+                                                <p>Encore un grand merci Isabelle !!!
+													C'était vraiment top. Ton exposé est très intéressant et professionnel ..je n'ai pas vu le temps passer .... et en plus..tes recettes ...délicieuses ...je me suis régalée de toutes ces associations de mets succulents...
+												</p>
+                                                <small>Nathalie Camus</small>
+                                            </div>
+                                        </div>
+                                    </blockquote>
+                                </div>
+                                <!-- Quote 3 -->
+                                <div class="item">
+                                    <blockquote>
+                                        <div class="row">
+                                            <div class="col-xs-8 col-xs-offset-2">
+                                                <p>Merci encore pour ton "évangélisation" de qualité qui nous permet de prendre un peu mieux soin de nous ! 
+												</p>
+                                                <small>François Stoop</small>
+                                            </div>
+                                        </div>
+                                    </blockquote>
+                                </div>
+                                <!-- Quote 4 -->
+                                <div class="item">
+                                    <blockquote>
+                                        <div class="row">
+                                            <div class="col-xs-8 col-xs-offset-2">
+                                                <p>Encore merci et bravo pour la clarté et le professionnalisme de tes cours et le délice de ta cuisine.</p>
+                                                <small>Pascale Fallon</small>
+                                            </div>
+                                        </div>
+                                    </blockquote>
+                                </div>
+                                <!-- Quote 5 -->
+                                <div class="item">
+                                    <blockquote>
+                                        <div class="row">
+                                            <div class="col-xs-8 col-xs-offset-2">
+
+                                                <p>Bravo et merci beaucoup pour ta clarté et ton travail-recherche gigantesque. Je suis impressionnée de ton savoir que tu transmets avec beaucoup d’aisance. 
+												</p>
+                                                <small>Sabine Houtman</small>
+                                            </div>
+                                        </div>
+                                    </blockquote>
+                                </div>
+                                <!-- Quote 6 -->
+                                <div class="item">
+                                    <blockquote>
+                                        <div class="row">
+                                            <div class="col-xs-8 col-xs-offset-2">
+												<p>Quelle énergie , quelle dynamique, quelle professionnalisme dans ce que tu entreprends ! Deux jours après je suis encore sous le charme de cette journée immergée dans notre passion commune et en admiration devant ton travail. Tes élèves sont gâtées !
+												</p>
+                                                <small>Dominique Laurent</small>
+                                            </div>
+                                        </div>
+                                    </blockquote>
+                                </div>
+                                <!-- Quote 7 -->
+                                <div class="item">
+                                    <blockquote>
+                                        <div class="row">
+                                            <div class="col-xs-8 col-xs-offset-2">
+
+                                                <p>Chaque personne ayant un peu de curiosité sur les bienfaits d’une alimentation et d’un mode de vie énergisants devrait suivre sans hésitation tes cours.  Tes sessions riches en informations sont autant didactiques que délicieuses. Bravo !
+												</p>
+                                                <small>Sébastien Füki</small>
+                                            </div>
+                                        </div>
+                                    </blockquote>
+                                </div>
+                            </div>
+
+                            <!-- Carousel Buttons Next/Prev -->
+                            <a data-slide="prev" href="#quote-carousel" class="left carousel-control"><i class="fa fa-chevron-left"></i></a>
+                            <a data-slide="next" href="#quote-carousel" class="right carousel-control"><i class="fa fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+			</div>
+		</section>
+
+		<section class="section-images">
+			<div class="row row--medium">
+				<div class="col-1-of-4">
+					<img src="img/photos/index1.jpg" alt="Logo" class="img-responsive img-rounded">
+				</div>
+				<div class="col-1-of-4">
+					<img src="img/photos/index2.jpg" alt="Logo" class="img-responsive img-rounded">
+				</div>
+				<div class="col-1-of-4">
+					<img src="img/photos/index3.jpg" alt="Logo" class="img-responsive img-rounded">
+				</div>
+				<div class="col-1-of-4">
+					<img src="img/photos/index4.jpg" alt="Logo" class="img-responsive img-rounded">
+				</div>
+			</div>
+		</section>
+
+
+		<footer class="footer  text-center">
+				<div class='text-center u-margin-bottom-medium'>
+					<img src="img/logo/logo.png" alt="Logo" class="footer__logo">
+				</div>
+				<div class='text-center'>
+					<ul class="footer__information text-center">
+						<li>Téléphone : +32 477 25 52 15</li>
+						<li><a href="mailto:brasseur.isabelle@gmail.com" class="footer__information--link"> E-mail : brasseur.isabelle@gmail.com </a></li>
+						<li>Adresse : 16 avenue de l'Orée - 1640 Rhode-Saint-Genèse </li>
+					</ul>
+				</div>
+
+		</footer>
+
+		<script type="text/javascript" src="js/script.js"></script>
 	</body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+

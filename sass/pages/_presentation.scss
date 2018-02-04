@@ -1,0 +1,19 @@
+.section-blue{
+	background-color: $color-blue;
+	padding: 3rem 0;
+	height: 100%;
+
+	@include respond(tab-port){
+		padding: 10rem 0;
+	}
+}
+
+.section-grey{
+	background-color: $color-grey-light-1;
+	padding: 3rem 0;
+	height: 100%;
+
+	@include respond(tab-port){
+		padding: 10rem 0;
+	}
+}

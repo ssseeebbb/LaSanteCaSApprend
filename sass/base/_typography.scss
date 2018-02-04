@@ -1,0 +1,210 @@
+
+body {
+	font-family: "Lato", sans-serif;
+	font-weight: 400;
+	/*font-size:1.6rem;*/
+	line-height: 1.7;
+	color:$color-grey-dark-1;
+}
+
+
+.heading-primary{
+	color: $color-white;
+	text-transform: uppercase;
+
+	backface-visibility: hidden; /*Pour contrer l'effet shaky des animations*/
+
+	margin-bottom: 6rem; /*Pour creer un espace blanc*/
+	
+
+	&--main{
+		display: block;
+		font-size: 5rem;
+		font-weight: 600;
+		letter-spacing: 0.5rem;
+
+		animation-name: moveInLeft;
+		animation-duration: 1s;
+		animation-timing-function: ease-out;
+
+		@include respond(phone){
+			letter-spacing: 2rem;
+			font-size: 4rem;
+		}
+		
+		/*	
+		animation-delay: 3s;
+		animation-iteration-count:3; nombre de fois qu'on fait l'animation
+		*/
+	}
+
+	&--sub{
+		display: block;    /*Un element bloc va occuper toute la largeur*/
+		font-size: 2rem;
+		font-weight: 700;
+		letter-spacing: 1.2rem;
+
+		animation : moveInRight 1s ease-out;
+
+		@include respond(phone){
+			letter-spacing: .5rem;
+		}
+	}	
+}
+
+.heading-secondary {
+	font-size: 3.5rem;
+	text-transform: uppercase;
+	font-weight: 700;
+	display: inline-block;
+	color: $color-grey-dark-1;
+	letter-spacing: .2rem;
+
+	transition: all .2s;
+
+	@include respond(tab-port){
+		font-size: 3rem;
+	}
+	@include respond(phone){
+		font-size: 2.5rem;
+	}
+
+	&:hover{
+		transform: scale(1.1);
+		text-shadow: .5rem 1rem 2rem rgba($color-black,.2);
+	}
+}
+
+
+
+.heading-tertiary{
+	font-size: $default-font-size;
+	font-weight: 700;
+	text-transform: uppercase;
+	color:$color-grey-dark-2;
+}
+
+
+.heading-sentence{
+	font-size: 2.5rem;
+	font-weight: 400;
+
+	&:not(:last-child){
+		margin-bottom: 3rem;
+	}
+}
+
+.text-indent{
+	text-indent: 3rem;
+}
+
+.text-margin-left{
+	margin-left: 3rem;
+}
+
+
+.nopadding{
+	padding: 0rem !important;
+}
+
+
+.text-xsmall-side-padding{
+	padding: 0 0.3rem;
+}
+
+.text-small-side-padding{
+	padding: 0 1.3rem;
+}
+
+.text-medium-side-padding{
+	padding: 0 3rem;
+}
+
+.text-large-side-padding{
+	padding: 0 6rem;
+}
+
+.text-white{
+	color:$color-white !important;
+}
+
+.text-grey{
+	color:$color-grey-dark-2;
+
+	&--nohover{
+		&:hover{
+			color: $color-grey-dark-2;
+		}
+	}
+}
+
+
+
+.text-grey-bold{
+	color: darken($color-grey-dark-2, 10);
+}
+
+.text-grey-dark{
+	color:$color-grey-dark-4;
+}
+
+.notransform{
+	text-transform: none !important;
+}
+
+.heading-center{
+	padding-top: 0rem;
+	padding-bottom: 2rem;
+	font-weight: 600;
+	text-transform: uppercase;
+	
+	&--msmall{
+		font-size: 1.7rem;
+	}
+
+	&--medium{
+		font-size: 1.9rem;
+	}
+
+	&--mlarge{
+		font-size: 2.1rem;
+	}
+
+	&--large{
+		font-size: 3rem;
+	}
+}
+
+
+.paragraph{
+	font-size: $default-font-size;
+	color:$color-grey-dark-2;
+	text-align: justify;
+	margin-top: -2rem;
+
+	&:not(:last-child){
+		margin-bottom: 3rem;
+	}
+
+	&__liste-text{
+		list-style: square;
+		color:$color-grey-dark-2;
+		& li{
+			list-style-position: inside;
+		}
+	}
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+

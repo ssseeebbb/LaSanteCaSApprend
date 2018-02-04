@@ -1,0 +1,67 @@
+.description{
+	padding: 0 5rem;
+	position: relative;
+	width:100%;
+	overflow: hidden;
+
+	&__map{
+		float:right;
+		width: 33.33333%;
+		border-radius: 3px;
+		display: block;
+		margin-left:1.5rem;
+	}
+
+	&__header{
+		font-size: 2rem;
+		text-transform: uppercase;
+	}
+
+	&__paragraph{
+		font-size: $default-font-size;
+		text-align: justify;
+
+		&:not(:last-child){
+			margin-bottom: 3rem;
+		}
+	}
+
+	&__link{
+		
+	}
+	&__link-list{
+		list-style: none;
+
+	}
+	&__link-item{
+		margin: 0 1.5rem;
+		display: inline-block;
+	}
+
+	&__textarea{
+		width:100%;
+		border: 1px solid $color-blue-light;
+		border-radius: 3px;
+		padding: .3rem .5rem;
+		resize: none;
+		display: inline-block;
+		margin-bottom: 1rem;
+		outline: none;
+	}
+
+	&__submit-comment{
+		display: block;
+		text-align: center;
+		padding: .4rem 2rem !important;
+		font-size: 1.4rem !important;
+		margin:0 40%;
+		width:20%;
+		opacity: .7;
+
+		&:hover{
+			opacity: 1;
+		}
+		
+
+	}
+}

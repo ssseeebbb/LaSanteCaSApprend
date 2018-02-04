@@ -1,0 +1,342 @@
+.card{
+
+	//functionnalites
+
+	perspective:150rem; //on place le point de perspective pour un meilleur rendu 
+	-moz-perspective: 150rem; //pour fonctionner avec firefox
+	position: relative;
+	height: 49rem; //clearfix pcq sinon y a un boc de 0x...
+
+
+
+	&__side{
+		height: 49rem;
+		transition : all .8s ease;
+		position:absolute;
+		top:0;
+		left:0;
+		width:100%;
+		border-radius: 3px;
+		overflow:hidden; //l'image casse la bordure ronde, tout se qui depasse maintenant est cache
+
+		box-shadow: 0 1.5rem 4rem rgba($color-black,.15);
+
+		backface-visibility:hidden; //hide le coté derriere d'un element
+		-webkit-backface-visibility:hidden; // pour fonctioner avec safari
+
+		&--front{
+			background-color: $color-white;
+		}
+		&--back{
+			transform: rotateY(180deg);
+
+			&-1{
+				background-image: linear-gradient(to right bottom, $color-orange-light, $color-orange-dark);
+			}
+
+			&-2{
+				background-image: linear-gradient(to right bottom, $color-green-light, $color-green-dark);
+			}
+
+			&-3{
+				background-image: linear-gradient(to right bottom, $color-blue-light, $color-blue-dark);
+			}
+		}
+
+	}
+	&:hover &__side--front{
+		transform: rotateY(-180deg);
+	}
+	&:hover &__side--back{
+		transform: rotateY(0);
+	}
+
+
+	//Front side styling
+	&__picture{
+		
+		background-size: cover;
+		height: 23rem;
+		/* background-blend-mode:screen; */
+
+
+		border-top-left-radius: 3px;
+		border-top-right-radius: 3px;
+
+		&--1{
+			background-image: url(../img/PCT1.jpg);
+			background-position: center;
+		}
+
+		&--2{
+			background-image: url(../img/PCT2.jpg);
+			background-position: center;
+		}
+
+		&--3{
+			background-image: url(../img/PCT3.jpg);
+			background-position: center;
+		}
+	}
+
+	&__heading{
+		font-size: 2.2rem;
+		font-weight: 400;
+		text-transform: uppercase;
+
+		/* background-color: $color-grey-light-1; */
+		color:$color-grey-dark-1;
+		
+		width:100%;
+		text-align: center;
+		padding: 1rem .5rem;
+
+	}
+
+	&__flag{
+		height: 1.6rem;
+		margin-right: .5rem;
+		float: center;
+	}
+
+	&__like{
+		height: 1.6rem;
+		margin-left: .4rem;
+		margin-right: .5rem;
+		float: center;
+		filter: invert(30%)
+	}
+	
+
+	&__details{
+		padding: 0rem 3rem;
+
+		ul{
+			list-style: none;
+			width:80%;
+			margin: 0 auto;
+			
+
+			li{
+				text-align: center;
+				font-size: 1.5rem;
+				padding: 1rem;
+
+				&:not(:last-child){
+					border-bottom: 1px solid $color-grey-light-2;
+				}
+			}
+		}
+	}
+
+	//Back side
+
+	&__cta{
+		position: absolute;
+		top:50%;
+		left:50%;
+		transform: translate(-50%, -50%);
+		width:90%;
+		text-align: center;
+	}
+
+	&__description-box{
+		text-align: left;
+		color:$color-white;
+		margin-bottom: 4rem;
+	}
+	
+	&__description-heading{
+		font-size: 2rem;
+		text-transform: uppercase;
+	}
+
+	&__description-text{
+		font-size: 1.6rem;
+		font-weight: 300;
+		text-align: justify;
+	}
+
+
+
+
+
+
+
+	@media only screen and (max-width: 56.25em),
+			only screen and (hover: none){ //On prend en compte le fait qu'on ait un touch screen
+		height: auto; //clearfix pcq sinon y a un boc de 0x...
+		border-radius: 3px;
+		background-color: $color-white;
+
+		box-shadow: 0 1.5rem 4rem rgba($color-black,.15);
+
+
+		&__side{
+			height: auto;
+			position:relative;
+			box-shadow: none;
+			
+
+			&--back{
+				transform: rotateY(0);
+
+				-webkit-clip-path:polygon(0 15%, 100% 0, 100% 100%, 0 100%);
+				clip-path:polygon(0 15%, 100% 0, 100% 100%, 0 100%);
+			}
+
+		}
+		&:hover &__side--front{
+			transform: rotateY(0);
+		}
+
+		&__details{
+			padding: 1rem 3rem;
+		}
+
+		//Back side
+
+		&__cta{
+			position: relative;
+			top:0%;
+			left:0%;
+			width:100%;
+			transform:translate(0);
+			padding: 7rem 4rem 4rem 4rem;
+		}
+
+		&__price-box{
+			margin-bottom: 3rem;
+		}
+		
+
+		&__price-value{
+			font-size: 4rem;
+
+		}
+
+	}
+}
+
+.carte{
+	&__photo{
+		background-size: cover;
+		height: 22rem;
+		background-position: center;
+
+		border-top-left-radius: 10px;
+		border-top-right-radius: 10px;
+	}
+
+	&__photo--2{
+		background-size: cover;
+		height: 15rem;
+
+		border-top-left-radius: 10px;
+		border-top-right-radius: 10px;
+		background-position: center;
+	}
+
+	&--info{
+		
+		position:relative;
+		margin: auto 0;
+		width:100%;
+		height: 26rem;
+		border-radius: 10px;
+		overflow:hidden; //l'image casse la bordure ronde, tout se qui depasse maintenant est cache
+		background-color: $color-blue;
+		box-shadow: 0 1.5rem 4rem rgba($color-black,.15);
+
+		@include respond(tab-port){
+			width:60%;
+			margin: auto;
+		}
+	}
+
+	&--cours{
+		position:relative;
+
+		width:100%;
+		height: 44rem;
+		border-radius: 15px;
+		overflow:hidden; //l'image casse la bordure ronde, tout se qui depasse maintenant est cache
+		background-color: $color-grey-light-1;
+		box-shadow: 0 1.5rem 4rem rgba($color-black,.15);
+
+		@include respond(tab-port){
+			width:50%;
+			margin: auto;
+		}
+
+		@include respond(phone){
+			width:80%;
+			margin: auto;
+		}
+	}
+
+	&--cours-presentation{
+		position:relative;
+
+		width:100%;
+		height: 33rem;
+		border-radius: 15px;
+		overflow:hidden; //l'image casse la bordure ronde, tout se qui depasse maintenant est cache
+		background-color: $color-blue;
+		box-shadow: 0 1.5rem 4rem rgba($color-black,.15);
+
+		@include respond(tab-port){
+	        width:40%;
+			margin: auto;
+			height: 28rem;
+	    }
+
+	    @include respond(phone){
+	        width:70%;
+			margin: auto;
+			height: 28rem;
+	    }
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
