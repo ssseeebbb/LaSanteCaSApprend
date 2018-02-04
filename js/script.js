@@ -1,6 +1,3 @@
-
-
-
 //Scroll to target
 
 $(document).ready(function (){
@@ -10,17 +7,6 @@ $(document).ready(function (){
                 }, 800);
             });
         });
-
-
-//Slider
-var slider = document.querySelector(".slider");
-var output = document.querySelector(".slider-days");
-output.innerHTML = slider.value;
-
-slider.oninput = function() {
-  output.innerHTML = this.value;
-}
-
 
 
 //Image svg
