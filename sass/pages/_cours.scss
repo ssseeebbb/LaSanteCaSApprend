@@ -1,9 +1,0 @@
-.section-grey-dark{
-	background-color: $color-grey-light-3;
-	padding: 3rem 0;
-	height: 100%;
-
-	@include respond(tab-port){
-		padding: 10rem 0;
-	}
-}
