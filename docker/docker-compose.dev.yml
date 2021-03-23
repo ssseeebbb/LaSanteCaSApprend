@@ -1,0 +1,4 @@
+services:
+  nginx-lasante:
+    ports:
+      - "8080:80"
