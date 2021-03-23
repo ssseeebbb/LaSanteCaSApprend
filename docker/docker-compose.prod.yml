@@ -4,4 +4,4 @@ services:
       - "traefik.enable=true"
       - "traefik.docker.network=proxy"
       - "traefik.http.routers.${WEBSITE_NAME}.entrypoints=websecure"
-      - "traefik.http.routers.${WEBSITE_NAME}.rule=Host(`${DOMAIN_NAME}`)"
+      - "traefik.http.routers.${WEBSITE_NAME}.rule=Host(`${DOMAIN_NAME}`, `www.${DOMAIN_NAME}`)"
